@@ -8,5 +8,22 @@ body {
 }
 
 img {
-  width: 20%;
+  width: 8%;
+  transition: transform 0.5s;
+}
+
+.east {
+  transform: rotate(0turn);
+}
+
+.south {
+  transform: rotate(0.25turn);
+}
+
+.west {
+  transform: rotate(0.5turn);
+}
+
+.north {
+  transform: rotate(-0.25turn);
 }
