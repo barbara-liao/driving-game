@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vh;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(40, 141, 38);
+}
+
+img {
+  width: 20%;
+}
