@@ -12,6 +12,11 @@ img {
   transition: transform 0.5s;
 }
 
+/* .start {
+  transform: translate(1000px, 0);
+  transition: 16s;
+} */
+
 .east {
   transform: rotate(0turn);
 }

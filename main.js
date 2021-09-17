@@ -1,6 +1,14 @@
 var $car = document.querySelector('#car');
 
 addEventListener('keydown', handleTurn);
+addEventListener('keydown', handleStart);
+
+var data = {
+  location: {
+    top: 0,
+    left: 0
+  }
+};
 
 function handleTurn(event) {
   if (event.key === 'ArrowRight') {
@@ -12,4 +20,16 @@ function handleTurn(event) {
   } else if (event.key === 'ArrowUp') {
     $car.className = 'north';
   }
+}
+
+function handleStart(event) {
+  if (event.key === ' ') {
+    setInterval(startCar, 16);
+  }
+}
+var start = 0;
+function startCar() {
+  start += 3;
+  $car.style.left = start + 'px';
+  data.location.left = start;
 }
